@@ -4,6 +4,42 @@
 <link rel="stylesheet" href="{% static '_navbar/css/navbar.css' %}">
 {% endblock css %}
 
-<div class="oi">
-    <h1>Hello Word!!</h1>
-</div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container-fluid container-conteudo-nav">
+      <img src="{% static '_navbar/img/parque-das-aguas-logo-350px.png' %}" alt="" id="logo-navbar"><a class="navbar-brand" href="#"></a></img>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link Selecionado" href="#"><strong>Home</strong></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><strong>Eventos</strong></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><strong>Sobre nós</strong></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><strong>Blog</strong></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><strong>Contato</strong></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <strong>Minha conta</strong>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Perfil</a></li>
+              <li><a class="dropdown-item" href="#">Meus ingressos</a></li>
+              <li><a class="dropdown-item" href="#">Ajuda</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  

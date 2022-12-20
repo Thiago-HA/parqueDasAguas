@@ -1,3 +1,24 @@
-.oi{
-    background:blue
+.bg-light {
+    background-color: #ffffff!important;
+    z-index: 10;
+    -webkit-box-shadow: -2px 13px 19px -12px rgba(0,0,0,0.9); 
+    box-shadow: -2px 13px 19px -12px rgba(0,0,0,0.9);
 }
+
+
+.container-conteudo-nav{
+    gap: 10px;
+}
+
+#logo-navbar{
+    width: 40px;
+}
+
+
+
+
+
+
+
+
+

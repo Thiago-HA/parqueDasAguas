@@ -7,11 +7,18 @@ Parque das Águas - Home
 {% endblock titulo %}
 
 {% block css %}
-
+<link rel="stylesheet" href="{% static 'home/css/home.css' %}">
 {% endblock css %}
 
 {% block conteudo %}
 
+<div class="container-bg">
+    <div class="conteudo-bg">
+      <h1><strong>Bem vindo(a) ao</strong></h1>
+      <img src="{% static 'home/img/parque-das-aguas-logo-350px.png' %}" alt="" id="logo-principal"><a class="navbar-brand" href="#"></a></img>
+    </div>
+    <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 600" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><defs><linearGradient id="gradient" x1="50%" y1="0%" x2="50%" y2="100%"><stop offset="5%" stop-color="#0693e3"></stop><stop offset="95%" stop-color="#32ded4"></stop></linearGradient></defs><path d="M 0,600 C 0,600 0,200 0,200 C 65.56578495362419,186.53521126760563 131.13156990724838,173.07042253521126 203,189 C 274.8684300927516,204.92957746478874 353.0395053246306,250.25352112676057 429,264 C 504.9604946753694,277.7464788732394 578.7104087942288,259.91549295774655 637,243 C 695.2895912057712,226.08450704225348 738.1188594984542,210.08450704225353 813,213 C 887.8811405015458,215.91549295774647 994.8141532119546,237.74647887323945 1059,246 C 1123.1858467880454,254.25352112676055 1144.6245276537272,248.92957746478874 1201,239 C 1257.3754723462728,229.07042253521126 1348.6877361731363,214.53521126760563 1440,200 C 1440,200 1440,600 1440,600 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="0.53" class="transition-all duration-300 ease-in-out delay-150 path-0"></path><defs><linearGradient id="gradient" x1="50%" y1="0%" x2="50%" y2="100%"><stop offset="5%" stop-color="#0693e3"></stop><stop offset="95%" stop-color="#32ded4"></stop></linearGradient></defs><path d="M 0,600 C 0,600 0,400 0,400 C 50.79972518035041,422.5400206114737 101.59945036070081,445.08004122294744 182,439 C 262.4005496392992,432.91995877705256 372.40192373754724,398.21985571968395 447,385 C 521.5980762624528,371.78014428031605 560.7928546891102,380.04053589831676 621,396 C 681.2071453108898,411.95946410168324 762.4266575060117,435.6180006870492 824,421 C 885.5733424939883,406.3819993129508 927.5005152868432,353.4874613534867 995,339 C 1062.4994847131568,324.5125386465133 1155.5712813466162,348.4321538990038 1234,365 C 1312.4287186533838,381.5678461009962 1376.214359326692,390.78392305049806 1440,400 C 1440,400 1440,600 1440,600 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-1"></path></svg>
+</div>
 
 {% endblock conteudo %}
 
