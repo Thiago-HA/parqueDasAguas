@@ -11,14 +11,60 @@ Parque das Águas - Home
 {% endblock css %}
 
 {% block conteudo %}
-
-<div class="container-bg">
-    <div class="conteudo-bg">
-      <h1><strong>Bem vindo(a) ao</strong></h1>
-      <img src="{% static 'home/img/parque-das-aguas-logo-350px.png' %}" alt="" id="logo-principal"><a class="navbar-brand" href="#"></a></img>
+<!-- CARROSSEL -->
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'home/img/parque-das-aguas-rampas.jpg' %}" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'home/img/parque-das-aguas-rampas.jpg' %}" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'home/img/parque-das-aguas-rampas.jpg' %}" class="d-block w-100" alt="...">
+      </div>
     </div>
-    <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 600" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><defs><linearGradient id="gradient" x1="50%" y1="0%" x2="50%" y2="100%"><stop offset="5%" stop-color="#0693e3"></stop><stop offset="95%" stop-color="#32ded4"></stop></linearGradient></defs><path d="M 0,600 C 0,600 0,200 0,200 C 65.56578495362419,186.53521126760563 131.13156990724838,173.07042253521126 203,189 C 274.8684300927516,204.92957746478874 353.0395053246306,250.25352112676057 429,264 C 504.9604946753694,277.7464788732394 578.7104087942288,259.91549295774655 637,243 C 695.2895912057712,226.08450704225348 738.1188594984542,210.08450704225353 813,213 C 887.8811405015458,215.91549295774647 994.8141532119546,237.74647887323945 1059,246 C 1123.1858467880454,254.25352112676055 1144.6245276537272,248.92957746478874 1201,239 C 1257.3754723462728,229.07042253521126 1348.6877361731363,214.53521126760563 1440,200 C 1440,200 1440,600 1440,600 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="0.53" class="transition-all duration-300 ease-in-out delay-150 path-0"></path><defs><linearGradient id="gradient" x1="50%" y1="0%" x2="50%" y2="100%"><stop offset="5%" stop-color="#0693e3"></stop><stop offset="95%" stop-color="#32ded4"></stop></linearGradient></defs><path d="M 0,600 C 0,600 0,400 0,400 C 50.79972518035041,422.5400206114737 101.59945036070081,445.08004122294744 182,439 C 262.4005496392992,432.91995877705256 372.40192373754724,398.21985571968395 447,385 C 521.5980762624528,371.78014428031605 560.7928546891102,380.04053589831676 621,396 C 681.2071453108898,411.95946410168324 762.4266575060117,435.6180006870492 824,421 C 885.5733424939883,406.3819993129508 927.5005152868432,353.4874613534867 995,339 C 1062.4994847131568,324.5125386465133 1155.5712813466162,348.4321538990038 1234,365 C 1312.4287186533838,381.5678461009962 1376.214359326692,390.78392305049806 1440,400 C 1440,400 1440,600 1440,600 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-1"></path></svg>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    <div class="wave-carrossel-div">
+      <img src="{% static 'home/img/wave (1).svg' %}" alt="" id="wave-svg"></img>
+  </div>
+</div>
+
+<!-- END - CARROSSEL -->
+
+
+  <a class="widget-whatsapp" href="https://wa.me/5548920001680" target="_blank">
+    <svg class="widget-whatsapp--icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32">
+    <path d=" M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-.832-2.335-.143-.372-.214-.487-.6-.487-.187 0-.36-.043-.53-.043-.302 0-.53.115-.746.315-.688.645-1.032 1.318-1.06 2.264v.114c-.015.99.472 1.977 1.017 2.78 1.23 1.82 2.506 3.41 4.554 4.34.616.287 2.035.888 2.722.888.817 0 2.15-.515 2.478-1.318.13-.33.244-.73.244-1.088 0-.058 0-.144-.03-.215-.1-.172-2.434-1.39-2.678-1.39zm-2.908 7.593c-1.747 0-3.48-.53-4.942-1.49L7.793 24.41l1.132-3.337a8.955 8.955 0 0 1-1.72-5.272c0-4.955 4.04-8.995 8.997-8.995S25.2 10.845 25.2 15.8c0 4.958-4.04 8.998-8.998 8.998zm0-19.798c-5.96 0-10.8 4.842-10.8 10.8 0 1.964.53 3.898 1.546 5.574L5 27.176l5.974-1.92a10.807 10.807 0 0 0 16.03-9.455c0-5.958-4.842-10.8-10.802-10.8z" fill-rule="evenodd"></path>
+    </svg>
+  </a>
+
+<div class="container-parque-intro">
+  <div class="conteudo-parque-intro row">
+    <div class=" col">
+      <h1>Diversão é aqui!</h1>
+      <p>Parque das Águas é amplo espaço com muitos brinquedos que trazem conforto, liberdade e muita alegria para todas as idades.</p>
+    </div>
+    <div class="col">
+      <div class="img-intro" ><img src="{% static 'home/img/parque-das-aguas-toboga.jpg' %}" alt="" id="img-parque1"></img></div>
+    </div>
+  </div>
 </div>
 
 {% endblock conteudo %}
-
+<!--
+<div class="container-bg">
+  <div class="conteudo-bg">
+    <h1><strong>Bem vindo(a) ao</strong></h1>
+    <img src="{% static 'home/img/parque-das-aguas-logo-350px.png' %}" alt="" id="logo-principal"><a class="navbar-brand" href="#"></a></img>
+  </div>
+  <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 600" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><defs><linearGradient id="gradient" x1="50%" y1="0%" x2="50%" y2="100%"><stop offset="5%" stop-color="#0693e3"></stop><stop offset="95%" stop-color="#32ded4"></stop></linearGradient></defs><path d="M 0,600 C 0,600 0,200 0,200 C 65.56578495362419,186.53521126760563 131.13156990724838,173.07042253521126 203,189 C 274.8684300927516,204.92957746478874 353.0395053246306,250.25352112676057 429,264 C 504.9604946753694,277.7464788732394 578.7104087942288,259.91549295774655 637,243 C 695.2895912057712,226.08450704225348 738.1188594984542,210.08450704225353 813,213 C 887.8811405015458,215.91549295774647 994.8141532119546,237.74647887323945 1059,246 C 1123.1858467880454,254.25352112676055 1144.6245276537272,248.92957746478874 1201,239 C 1257.3754723462728,229.07042253521126 1348.6877361731363,214.53521126760563 1440,200 C 1440,200 1440,600 1440,600 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="0.53" class="transition-all duration-300 ease-in-out delay-150 path-0"></path><defs><linearGradient id="gradient" x1="50%" y1="0%" x2="50%" y2="100%"><stop offset="5%" stop-color="#0693e3"></stop><stop offset="95%" stop-color="#32ded4"></stop></linearGradient></defs><path d="M 0,600 C 0,600 0,400 0,400 C 50.79972518035041,422.5400206114737 101.59945036070081,445.08004122294744 182,439 C 262.4005496392992,432.91995877705256 372.40192373754724,398.21985571968395 447,385 C 521.5980762624528,371.78014428031605 560.7928546891102,380.04053589831676 621,396 C 681.2071453108898,411.95946410168324 762.4266575060117,435.6180006870492 824,421 C 885.5733424939883,406.3819993129508 927.5005152868432,353.4874613534867 995,339 C 1062.4994847131568,324.5125386465133 1155.5712813466162,348.4321538990038 1234,365 C 1312.4287186533838,381.5678461009962 1376.214359326692,390.78392305049806 1440,400 C 1440,400 1440,600 1440,600 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-1"></path></svg>
+</div>
+-->
